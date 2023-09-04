@@ -1,0 +1,128 @@
+
+<!-- saved from url=(0094)http://localhost:9292/pacts/provider/propiedades_provider/consumer/propiedades_provider/latest -->
+<html style="--pact-kebab-url: url(&#39;/images/kebab-horizontal.svg&#39;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pact between propiedades_provider and propiedades_provider</title>
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/github.css">
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/github-json.css">
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/bootstrap.min.css">
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/material-menu.css">
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/pact.css">
+          <link rel="stylesheet" type="text/css" href="./pact_contract_propiedades_provider_files/jquery-confirm.min.css">
+          <script type="text/javascript">
+            const BASE_URL = '';
+          </script>
+          <script src="./pact_contract_propiedades_provider_files/set-css-asset-base-url.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/highlight.pack.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/jquery-3.5.1.min.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/bootstrap.min.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/material-menu.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/pact.js"></script>
+          <script src="./pact_contract_propiedades_provider_files/jquery-confirm.min.js"></script>
+          <script>hljs.initHighlightingOnLoad();</script></head>
+            <body>
+              
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="margin:0; margin-bottom:1rem">
+              <li class="breadcrumb-item" style="margin:0;"><a href="http://localhost:9292/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page" style="margin:0;">Pact</li>
+            </ol>
+          </nav>
+          <div class="pact-metadata">
+            <ul>
+              <li class="pact-badge">
+            <img src="./pact_contract_propiedades_provider_files/badge.svg">
+          </li>
+              <li class="pact-badge-markdown" style="display:none">
+              <textarea rows="3" cols="100">If the broker is protected by authentication, set `enable_public_badge_access` to true in the configuration to enable badges to be embedded in a markdown file.
+[![propiedades_provider/propiedades_provider Pact Status](http://localhost:9292/pacts/provider/propiedades_provider/consumer/propiedades_provider/latest/badge.svg)]()</textarea>
+          </li>
+              <li>
+                <span class="name">propiedades_provider version:</span>
+                <span class="value">1.0-SNAPSHOT</span>
+              </li>
+              <li>
+                <span class="name" title="Mon 04 Sep 2023,  1:09am +00:00">Date published:</span>
+                <span class="value" title="Mon 04 Sep 2023,  1:09am +00:00">28 minutes ago</span>
+              </li>
+              <li>
+                <span data-consumer-name="propiedades_provider" data-provider-name="propiedades_provider" data-consumer-version-number="1.0-SNAPSHOT" data-api-browser-url="/hal-browser/browser.html#/pacts/provider/propiedades_provider/consumer/propiedades_provider/version/1.0-SNAPSHOT" data-matrix-url="/matrix?q[][pacticipant]=propiedades_provider&amp;q[][version]=1.0-SNAPSHOT&amp;q[][pacticipant]=propiedades_provider&amp;q[][latest]=true&amp;latestby=cvpv" data-pact-url="/pacts/provider/propiedades_provider/consumer/propiedades_provider/version/1.0-SNAPSHOT" class="more-options kebab-horizontal" aria-hidden="true" id="sm-0"></span>
+              </li>
+            </ul>
+          </div><h1>A pact between propiedades_provider and propiedades_provider</h1>
+
+<h3>Requests from propiedades_provider to propiedades_provider</h3>
+
+<ul>
+<li><p><a href="http://localhost:9292/pacts/provider/propiedades_provider/consumer/propiedades_provider/latest#a_request_for_propiedades_given_there_are_no_propiedades">A request for propiedades</a> given there are no propiedades</p></li>
+<li><p><a href="http://localhost:9292/pacts/provider/propiedades_provider/consumer/propiedades_provider/latest#a_request_for_propiedades_given_there_are_propiedades">A request for propiedades</a> given there are propiedades</p></li>
+</ul>
+
+<h3>Interactions</h3>
+
+<p><a name="a_request_for_propiedades_given_there_are_no_propiedades"></a>
+Given <strong>there are no propiedades</strong>, upon receiving <strong>a request for propiedades</strong> from propiedades_provider, with</p>
+
+<pre><code class="json hljs ">{
+  "<span class="hljs-attribute">method</span>": <span class="hljs-value"><span class="hljs-string">"GET"</span></span>,
+  "<span class="hljs-attribute">path</span>": <span class="hljs-value"><span class="hljs-string">"/propiedades"</span>
+</span>}
+</code></pre>
+
+<p>propiedades_provider will respond with:</p>
+
+<pre><code class="json hljs ">{
+  "<span class="hljs-attribute">status</span>": <span class="hljs-value"><span class="hljs-number">200</span></span>,
+  "<span class="hljs-attribute">headers</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">Content-Type</span>": <span class="hljs-value">[
+      <span class="hljs-string">"application/json"</span>
+    ]
+  </span>}</span>,
+  "<span class="hljs-attribute">body</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">content</span>": <span class="hljs-value">[
+
+    ]</span>,
+    "<span class="hljs-attribute">contentType</span>": <span class="hljs-value"><span class="hljs-string">"application/json"</span></span>,
+    "<span class="hljs-attribute">encoded</span>": <span class="hljs-value"><span class="hljs-literal">false</span>
+  </span>}
+</span>}
+</code></pre>
+
+<p><a name="a_request_for_propiedades_given_there_are_propiedades"></a>
+Given <strong>there are propiedades</strong>, upon receiving <strong>a request for propiedades</strong> from propiedades_provider, with</p>
+
+<pre><code class="json hljs ">{
+  "<span class="hljs-attribute">method</span>": <span class="hljs-value"><span class="hljs-string">"GET"</span></span>,
+  "<span class="hljs-attribute">path</span>": <span class="hljs-value"><span class="hljs-string">"/propiedades"</span>
+</span>}
+</code></pre>
+
+<p>propiedades_provider will respond with:</p>
+
+<pre><code class="json hljs ">{
+  "<span class="hljs-attribute">status</span>": <span class="hljs-value"><span class="hljs-number">200</span></span>,
+  "<span class="hljs-attribute">headers</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">Content-Type</span>": <span class="hljs-value">[
+      <span class="hljs-string">"application/json"</span>
+    ]
+  </span>}</span>,
+  "<span class="hljs-attribute">body</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">content</span>": <span class="hljs-value">[
+      {
+        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">1234567890</span></span>,
+        "<span class="hljs-attribute">items</span>": <span class="hljs-value">[
+          {
+            "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">nombre</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">precio</span>": <span class="hljs-value"><span class="hljs-number">100</span>
+          </span>}
+        ]
+      </span>}
+    ]</span>,
+    "<span class="hljs-attribute">contentType</span>": <span class="hljs-value"><span class="hljs-string">"application/json"</span></span>,
+    "<span class="hljs-attribute">encoded</span>": <span class="hljs-value"><span class="hljs-literal">false</span>
+  </span>}
+</span>}
+</code></pre>
+
+            
+          <div class="material-menu" style="display: none;"><ul><li id="sm-1">View in API Browser</li><li id="sm-2">View Matrix</li><li id="sm-3">Delete ...</li></ul></div></body></html>

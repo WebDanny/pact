@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "items": [
+      {
+        "id": "53e8f1d9-97f6-45f2-a2eb-d6eff7198ba9",
+        "nombre": "departamento Danny",
+        "estado": "INHABILITADO",
+        "precio": 1
+      },
+      {
+        "id": "7a875a32-356f-11ee-be56-0242ac120002",
+        "nombre": "macororo",
+        "estado": "INHABILITADO",
+        "precio": 3
+      }
+    ]
+  }
+]
