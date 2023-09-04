@@ -1,0 +1,175 @@
+{
+  "consumer": {
+    "name": "propiedades_provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for propiedades",
+      "key": "e8358276",
+      "pending": false,
+      "providerStates": [
+        {
+          "name": "there are no propiedades"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/propiedades"
+      },
+      "response": {
+        "body": {
+          "content": [
+
+          ],
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "status": 200
+      },
+      "type": "Synchronous/HTTP"
+    },
+    {
+      "description": "a request for propiedades",
+      "key": "c7808487",
+      "pending": false,
+      "providerStates": [
+        {
+          "name": "there are propiedades"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/propiedades"
+      },
+      "response": {
+        "body": {
+          "content": [
+            {
+              "id": 1234567890,
+              "items": [
+                {
+                  "estado": "string",
+                  "id": "string",
+                  "nombre": "string",
+                  "precio": 100
+                }
+              ]
+            }
+          ],
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "generators": {
+          "body": {
+            "$[*].id": {
+              "max": 2147483647,
+              "min": 0,
+              "type": "RandomInt"
+            },
+            "$[*].items[*].estado": {
+              "size": 20,
+              "type": "RandomString"
+            },
+            "$[*].items[*].id": {
+              "size": 20,
+              "type": "RandomString"
+            },
+            "$[*].items[*].nombre": {
+              "size": 20,
+              "type": "RandomString"
+            },
+            "$[*].items[*].precio": {
+              "max": 2147483647,
+              "min": 0,
+              "type": "RandomInt"
+            }
+          }
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type",
+                  "min": 1
+                }
+              ]
+            },
+            "$[*].id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$[*].items": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$[*].items[*].estado": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$[*].items[*].id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$[*].items[*].nombre": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$[*].items[*].precio": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "number"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      },
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.3.7"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "propiedades_provider"
+  }
+}
